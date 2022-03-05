@@ -1,9 +1,9 @@
-.landing{
-    background-color: black;
-    color: white;
-    height: 70vh;
+.paragraph1 p{
+  padding-left: 3%;
+  padding-top: 5%;
 }
-.paragraph{
-    margin: auto;
-    margin-left: 5%;
+.img1{
+    border-radius: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
