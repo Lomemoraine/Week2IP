@@ -13,7 +13,7 @@
 
   <body>
       <div class="container1">
-          <form id="displayForm"></form>
+          <!-- <form id="displayForm"></form> -->
     <div class="container p-3 my-3 bg-dark text-white text-center">
          <h3>Akan Naming system</h3>
     </div>
@@ -29,18 +29,22 @@
           <div class="col-md-6" style="background-color:black; height: 70vh; color: white;">
             <div class="form-group">
                 <label for="dateborn">Date of Birth:</label>
-                <input type="text" class="form-control" id="dateborn" onfocus="this.value=''" value="dd">
+                <input type="text" class="form-control" id="dateborn" onfocus="this.value=''" value="dd" required>
                 <label for="monthborn">Month of Birth:</label>
-                <input type="text" class="form-control" id="monthborn" onfocus="this.value=''" value="mm">
+                <input type="text" class="form-control" id="monthborn" onfocus="this.value=''" value="mm" required>
                 <label for="yearborn">Year of Birth:</label>
-                <input type="text" class="form-control" id="yearborn" onfocus="this.value=''" value="yyyy">
+                <input type="text" class="form-control" id="yearborn" onfocus="this.value=''" value="yyyy" required>
                 <label for="gender">Choose your Gender:</label>
                 <select class="form-control" id="gender">
+                  <option>Select gender</option>
                   <option>Male</option>
                   <option>Female</option>
                 </select> <br>
                 <button type="button" class="btn btn-info btn1" onclick="akanNaming();">SUBMIT DETAILS</button>
-                
+            </form>
+            <form onsubmit="return clearInput()">
+              <input class="clear" type="submit" value="Clear input">
+            </form>
               </div>
         
         
@@ -48,9 +52,13 @@
         
         </div>
         </div>
+        <div class="row" style="background-color: aliceblue;">
+         <p>YOUR AKAN NAME IS:</p>
+         <P id="displaymessage"></P>
+        </div>
     </div>
-    <div class="container2"></div>
-    <p id="displaymessage"></p>
+    <!-- <div class="container2"></div>
+    <p id="displaymessage"></p> -->
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
