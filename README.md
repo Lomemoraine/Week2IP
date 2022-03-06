@@ -1,7 +1,7 @@
 ### Akan Names Generator web App.
 ## Authors Info
-# By Lorraine Chepkemoi
-# Contact Information
+### By Lorraine Chepkemoi
+### Contact Information
 
 * Slack Profile - LORRAINE CHEPKEMOI.
 * Email - lorrainechepkemoi4@gmail.com
